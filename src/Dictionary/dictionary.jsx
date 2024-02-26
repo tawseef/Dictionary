@@ -43,10 +43,8 @@ export default function Dictionary() {
         <strong>Definition:</strong>
       </div>
       <br />
-      <div>
         {meaning ? <div>{meaning}</div> : false}
-        {notFound ? notFound : false}
-      </div>
+        {notFound ? <div>{notFound}</div> : false}
     </>
   );
 }
