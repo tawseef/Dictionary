@@ -16,7 +16,7 @@ export default function Dictionary() {
 
   const handle = () => {
     const mean = dict.find((ele) => {
-      if (ele.word === inp) return ele.meaning;
+      if (ele.word.toLowerCase() === inp.toLowerCase()) return ele.meaning;
     });
     if (Boolean(mean)) {
       setMeaning(mean.meaning);
